@@ -31,5 +31,19 @@ namespace Gostinitsa
         {
 
         }
+
+        private void filtrbutton_Click(object sender, EventArgs e)
+        {
+            if (filtrpanel.Height < 416)
+            {
+                filtrpanel.Height = 416;
+            }
+
+            else
+            {
+                filtrpanel.Height = 40;
+            }
+
+        
     }
 }
