@@ -1,0 +1,11 @@
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\bin\Debug\Gostinitsa.exe.config
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\bin\Debug\Gostinitsa.exe
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\bin\Debug\Gostinitsa.pdb
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.csproj.AssemblyReference.cache
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.csproj.SuggestedBindingRedirects.cache
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.MainForm.resources
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.Properties.Resources.resources
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.csproj.GenerateResource.cache
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.csproj.CoreCompileInputs.cache
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.exe
+D:\Буренин Кирилл\Гостиница\Gostinitsa\Gostinitsa\obj\Debug\Gostinitsa.pdb
