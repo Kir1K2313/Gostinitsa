@@ -34,16 +34,26 @@ namespace Gostinitsa
 
         private void filtrbutton_Click(object sender, EventArgs e)
         {
-            if (filtrpanel.Height < 416)
+            if (filtrpanel.Height < 172)
             {
-                filtrpanel.Height = 416;
+                filtrpanel.Height = 172;
             }
-
             else
             {
-                filtrpanel.Height = 40;
+                filtrpanel.Height = filtrbutton.Size.Height;
             }
+        }
 
-        
+        private void Hotel_click(object sender, EventArgs e)
+        {
+            PictureBox pb = (PictureBox)sender;
+            Hotelform hotelform = new Hotelform(pb.Tag.ToString());
+            hotelform.ShowDialog();
+        }
+
+        private void Hotel(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,15 +48,18 @@
             this.Citycombobox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.infopanel = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.hotel = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Authpanel.SuspendLayout();
             this.filtrpanel.SuspendLayout();
             this.infopanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Authpanel
@@ -117,7 +120,7 @@
             // 
             // filtrpanel
             // 
-            this.filtrpanel.BackColor = System.Drawing.Color.Lime;
+            this.filtrpanel.BackColor = System.Drawing.Color.LemonChiffon;
             this.filtrpanel.Controls.Add(this.Findbutton);
             this.filtrpanel.Controls.Add(this.dateTimePicker2);
             this.filtrpanel.Controls.Add(this.dateTimePicker1);
@@ -133,13 +136,13 @@
             this.filtrpanel.Location = new System.Drawing.Point(0, 97);
             this.filtrpanel.Margin = new System.Windows.Forms.Padding(5);
             this.filtrpanel.Name = "filtrpanel";
-            this.filtrpanel.Size = new System.Drawing.Size(1042, 416);
+            this.filtrpanel.Size = new System.Drawing.Size(1042, 172);
             this.filtrpanel.TabIndex = 1;
             this.filtrpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.filtrpanel_Paint);
             // 
             // Findbutton
             // 
-            this.Findbutton.Location = new System.Drawing.Point(817, 38);
+            this.Findbutton.Location = new System.Drawing.Point(813, 59);
             this.Findbutton.Name = "Findbutton";
             this.Findbutton.Size = new System.Drawing.Size(159, 61);
             this.Findbutton.TabIndex = 17;
@@ -180,9 +183,9 @@
             // 
             // filtrbutton
             // 
-            this.filtrbutton.Location = new System.Drawing.Point(3, 0);
+            this.filtrbutton.Location = new System.Drawing.Point(0, 0);
             this.filtrbutton.Name = "filtrbutton";
-            this.filtrbutton.Size = new System.Drawing.Size(159, 40);
+            this.filtrbutton.Size = new System.Drawing.Size(114, 44);
             this.filtrbutton.TabIndex = 12;
             this.filtrbutton.Text = "фильтр";
             this.filtrbutton.UseVisualStyleBackColor = true;
@@ -240,53 +243,81 @@
             // infopanel
             // 
             this.infopanel.Controls.Add(this.pictureBox2);
-            this.infopanel.Controls.Add(this.label4);
+            this.infopanel.Controls.Add(this.label10);
             this.infopanel.Controls.Add(this.pictureBox1);
+            this.infopanel.Controls.Add(this.label4);
+            this.infopanel.Controls.Add(this.hotel);
             this.infopanel.Controls.Add(this.label9);
-            this.infopanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.infopanel.Location = new System.Drawing.Point(0, 279);
+            this.infopanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infopanel.Location = new System.Drawing.Point(0, 269);
             this.infopanel.Margin = new System.Windows.Forms.Padding(5);
             this.infopanel.Name = "infopanel";
-            this.infopanel.Size = new System.Drawing.Size(1042, 425);
+            this.infopanel.Size = new System.Drawing.Size(1042, 435);
             this.infopanel.TabIndex = 2;
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(377, 85);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(287, 182);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(377, 142);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(287, 182);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "Виктория";
+            this.pictureBox1.Click += new System.EventHandler(this.Hotel_click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(372, 28);
+            this.label4.Location = new System.Drawing.Point(372, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(264, 29);
             this.label4.TabIndex = 2;
             this.label4.Text = "Гостиница \"Виктория\"";
             // 
-            // pictureBox1
+            // hotel
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(56, 85);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(280, 182);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.hotel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("hotel.BackgroundImage")));
+            this.hotel.Location = new System.Drawing.Point(40, 142);
+            this.hotel.Name = "hotel";
+            this.hotel.Size = new System.Drawing.Size(280, 182);
+            this.hotel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hotel.TabIndex = 1;
+            this.hotel.TabStop = false;
+            this.hotel.Tag = "Апельсин";
+            this.hotel.Click += new System.EventHandler(this.Hotel_click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(51, 28);
+            this.label9.Location = new System.Drawing.Point(42, 84);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(261, 29);
             this.label9.TabIndex = 0;
             this.label9.Text = "Гостиница \"Апельсин\"";
+            this.label9.Click += new System.EventHandler(this.Hotel);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(697, 84);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(243, 29);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Гостиница \"Космос\"";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(703, 145);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(268, 178);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "Космос";
+            this.pictureBox2.Click += new System.EventHandler(this.Hotel_click);
             // 
             // MainForm
             // 
@@ -308,8 +339,9 @@
             this.filtrpanel.PerformLayout();
             this.infopanel.ResumeLayout(false);
             this.infopanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,10 +367,12 @@
         private System.Windows.Forms.Button filtrbutton;
         private System.Windows.Forms.ComboBox GostcomboBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox hotel;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label10;
     }
 }
 
