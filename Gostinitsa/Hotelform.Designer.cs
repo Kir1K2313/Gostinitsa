@@ -30,8 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hotelform));
             this.Hotelpanel = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.StarpictureBox = new System.Windows.Forms.PictureBox();
+            this.HoteltextBox = new System.Windows.Forms.TextBox();
             this.Hotellabel = new System.Windows.Forms.Label();
             this.HotelpictureBox = new System.Windows.Forms.PictureBox();
             this.infopanel = new System.Windows.Forms.Panel();
@@ -42,7 +41,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Hotelpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StarpictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelpictureBox)).BeginInit();
             this.infopanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -52,8 +50,7 @@
             // 
             // Hotelpanel
             // 
-            this.Hotelpanel.Controls.Add(this.textBox1);
-            this.Hotelpanel.Controls.Add(this.StarpictureBox);
+            this.Hotelpanel.Controls.Add(this.HoteltextBox);
             this.Hotelpanel.Controls.Add(this.Hotellabel);
             this.Hotelpanel.Controls.Add(this.HotelpictureBox);
             this.Hotelpanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -63,28 +60,15 @@
             this.Hotelpanel.Size = new System.Drawing.Size(1167, 383);
             this.Hotelpanel.TabIndex = 0;
             // 
-            // textBox1
+            // HoteltextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(496, 252);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(423, 74);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Лучшая гостиница";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // StarpictureBox
-            // 
-            this.StarpictureBox.BackColor = System.Drawing.Color.Silver;
-            this.StarpictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("StarpictureBox.BackgroundImage")));
-            this.StarpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("StarpictureBox.Image")));
-            this.StarpictureBox.Location = new System.Drawing.Point(517, 136);
-            this.StarpictureBox.Name = "StarpictureBox";
-            this.StarpictureBox.Size = new System.Drawing.Size(75, 68);
-            this.StarpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.StarpictureBox.TabIndex = 3;
-            this.StarpictureBox.TabStop = false;
+            this.HoteltextBox.Location = new System.Drawing.Point(496, 252);
+            this.HoteltextBox.Multiline = true;
+            this.HoteltextBox.Name = "HoteltextBox";
+            this.HoteltextBox.ReadOnly = true;
+            this.HoteltextBox.Size = new System.Drawing.Size(423, 74);
+            this.HoteltextBox.TabIndex = 4;
+            this.HoteltextBox.Text = "Лучшая гостиница";
             // 
             // Hotellabel
             // 
@@ -103,7 +87,6 @@
             this.HotelpictureBox.Size = new System.Drawing.Size(453, 307);
             this.HotelpictureBox.TabIndex = 0;
             this.HotelpictureBox.TabStop = false;
-            this.HotelpictureBox.Click += new System.EventHandler(this.HotelpictureBox_Click);
             // 
             // infopanel
             // 
@@ -138,6 +121,8 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "Люкс";
+            this.pictureBox3.Click += new System.EventHandler(this.Room_Click);
             // 
             // label4
             // 
@@ -157,6 +142,8 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "Одноместный";
+            this.pictureBox2.Click += new System.EventHandler(this.Room_Click);
             // 
             // pictureBox1
             // 
@@ -167,6 +154,8 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "Трехместный";
+            this.pictureBox1.Click += new System.EventHandler(this.Room_Click);
             // 
             // label9
             // 
@@ -176,7 +165,6 @@
             this.label9.Size = new System.Drawing.Size(254, 29);
             this.label9.TabIndex = 4;
             this.label9.Text = "Номер Трехместный";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Hotelform
             // 
@@ -191,7 +179,6 @@
             this.Text = "Form1";
             this.Hotelpanel.ResumeLayout(false);
             this.Hotelpanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StarpictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HotelpictureBox)).EndInit();
             this.infopanel.ResumeLayout(false);
             this.infopanel.PerformLayout();
@@ -205,8 +192,7 @@
         #endregion
 
         private System.Windows.Forms.Panel Hotelpanel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox StarpictureBox;
+        private System.Windows.Forms.TextBox HoteltextBox;
         private System.Windows.Forms.Label Hotellabel;
         private System.Windows.Forms.PictureBox HotelpictureBox;
         private System.Windows.Forms.Panel infopanel;

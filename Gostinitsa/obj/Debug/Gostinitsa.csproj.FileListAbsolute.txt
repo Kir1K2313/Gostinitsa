@@ -21,3 +21,6 @@ D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\obj\De
 D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\obj\Debug\Gostinitsa.exe
 D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\obj\Debug\Gostinitsa.pdb
 D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\obj\Debug\Gostinitsa.Hotelform.resources
+D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\obj\Debug\Gostinitsa.RoomForm.resources
+D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\bin\Debug\MySql.Data.dll
+D:\Буренин Кирилл\Гостиница1\Gostinitsa1\Gostinitsa\obj\Debug\Gostinitsa.csproj.CopyComplete
